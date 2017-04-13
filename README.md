@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #How to use hfc with the IBM Bluemix Blockchain beta service
 
 The goal is to run [helloblockchain.js](https://github.com/ratnakar-asara/Node-Sample/blob/master/helloblockchain.js) sample program, which will deploy example02 chaincode and query/invoke it.
@@ -75,3 +76,6 @@ Failed to query chaincode, function: request={"chaincodeID":"9be0a0ed3f1788e8728
   ex: `chain.setDeployWaitTime(100);`
 
 
+=======
+# sample-blockchain-app-hfc
+>>>>>>> 73cf9aa5347e21ca2793a7c70f2d07a937f8d07c
