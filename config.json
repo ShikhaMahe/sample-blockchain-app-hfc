@@ -1,0 +1,58 @@
+{
+   "chainName":"hello_world",
+   "deployWaitTime":"180",
+   "user": {
+	  "username": "JohnDoe",
+      "affiliation" : "group1"
+   },
+   "deployRequest":{
+      "chaincodePath":"chaincode",
+      "functionName":"init",
+      "args":[
+         "Hello Blockchain"
+      ]
+   },
+   "invokeRequest":{
+      "functionName":"write",
+      "args":[
+         "newKey",
+         "Infosys DC"
+      ]
+   },
+   "queryRequest":{
+      "functionName":"read",
+      "args":[
+         "hello_world"
+      ]
+   },
+   "queryRequest1":{
+      "functionName":"read",
+      "args":[
+         "newKey"
+      ]
+   },
+   "deployRequest1":{
+      "chaincodePath":"chaincode",
+      "functionName":"init",
+      "args":[
+         "a",
+         "100",
+         "b",
+         "200"
+      ]
+   },
+   "invokeRequest1":{
+      "functionName":"invoke",
+      "args":[
+         "a",
+         "b",
+         "10"
+      ]
+   },
+   "queryRequest11":{
+      "functionName":"query",
+      "args":[
+         "a"
+      ]
+   }
+}

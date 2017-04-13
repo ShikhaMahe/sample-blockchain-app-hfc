@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <title>Favorites Organizer powered by Cloudant</title> -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="/style/style.css" />
+</head>
+<body>
+	<div class = "container">
+	<div class = "banner">
+		<img class="newappIcon" src="images/newapp-icon.png">
+		<p class = "appTitle">
+		        Sample Blockchain HFC App
+		</p>
+	</div>
+
+
+	<section>
+		<table id='notes' class='records' border='0' cellspacing='0' cellpadding='0'><tbody></tbody></table>
+	</section>
+	<footer>
+		<br><br><br>
+		<div id="errorDiv" class='errorMsg'></div>
+		<!-- Shikha added -->
+		<!-- <form action="#" method="POST">
+		<div>
+		<label> Register (Blockchain) </label><br/>
+			  Enroll Id: <input type="text" name="username"><br>
+			<button class="addBtn" title="Register">Register
+			</button>
+			<br>
+			
+		</div><br/><br/>
+		<div>
+		<label> Enroll (Blockchain) </label><br/>
+			  Enroll Id: <input type="text" name="username"><br>
+			  Secret: <input type="text" name="password"><br>
+			<button class="addBtn" title="Register">Enroll
+			</button>
+			<br>
+		</div>
+		</form> -->
+		<!-- <br/><br/> -->
+
+		<form action="/query" method="GET">
+		<div>
+		<label style="font-size:18px"><strong> Blockchain (Read 'hello_world' key) </strong> </label>
+		<br/>
+			<p> It will invoke 'read' function, with args as: 
+         		[	"hello_world" 	]
+         	</p>
+         	<p>
+         	(Args defined in config.json)
+      		</p> <br/>
+			<button title="Read" class="btn btn-primary">Read
+			</button>
+			<br>
+		</div>
+		</form>
+		<br/><br/>
+		<form action="/invoke" method="GET">
+		<div>
+		<label style="font-size:18px"> <strong> Blockchain (Invoke) </strong> </label><br/>
+			<p> It will invoke 'write' function, with args as: 
+         		[	"newKey",
+         			"Infosys DC"
+      			]</p>
+      		<p>
+      			(Args defined in config.json)
+      		</p> <br/>
+			<button title="Invoke" class="btn btn-primary">Invoke
+			</button>
+			<br>
+		</div>
+		</form>
+
+		<br/><br/>
+		<form action="/query1" method="GET">
+		<div>
+		<label style="font-size:18px"> <strong> Blockchain (Read 'newKey' key) </strong> </label><br/>
+			<p> It will invoke 'read' function, with args as: 
+         		[	"newKey" 	]
+         	</p>
+         	<p>
+         	(Args defined in config.json)
+      		</p> <br/>
+			<button title="Read" class="btn btn-primary">Read
+			</button>
+			<br>
+		</div>
+		</form>
+
+
+	</footer>
+	<script type="text/javascript" src="/scripts/util.js"></script>
+	<script type="text/javascript" src="/scripts/index.js"></script>
+	<div id="myImage"><div id="innerImg"></div></div>
+	<br><br><br>
+	</div>
+</body>
+</html>
